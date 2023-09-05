@@ -7,6 +7,16 @@ import "../styles/index.css";
 
 //import your own components
 import Home from "./component/home.jsx";
+import SecondsCounter from "./component/SecondsCounter";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+let contador = 0
+setInterval(contadorSegundos, 1000)
+	function contadorSegundos(){
+		
+		contador +=1;
+		console.log (contador)
+        
+        ReactDOM.render(<SecondsCounter seg={contador}/>, document.querySelector("#app"));
+	}
