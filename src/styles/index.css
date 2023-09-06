@@ -10,3 +10,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+h1{
+    font-size: 120px;
+    color: white;
+}
+.conten{
+    background-color: black;
+
+}
+
+.conten div{
+    border: 1px solid grey;
+    padding: 10px 20px 30px 20px;
+    border-radius: 10%;
+}
